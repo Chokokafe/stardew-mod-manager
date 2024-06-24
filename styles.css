@@ -1,0 +1,124 @@
+@font-face {
+    font-family: dune-rise;
+    src: url('Dune_Rise.ttf');
+}
+
+@font-face {
+    font-family: caviar-dreams;
+    src: url('CaviarDreams.ttf');
+}
+
+* {
+    font-family: caviar-dreams;
+    margin: 0;
+}
+
+#pagetitle {
+    font-family: dune-rise;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 30px;
+}
+
+table, td, tr {
+    border : 1px solid;
+}
+
+tr p{
+    margin: 20px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    
+}
+
+div p {
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+#content {
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.modInst {
+    margin: 30px;
+    border: #000 1px solid;
+}
+
+.modInst h1 {
+    font-family: caviar-dreams;
+    font-size: 16px;
+}
+
+.modToInst {
+    margin: 30px
+}
+
+.modUpdate {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modUpdateTitle {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#extractFiles {
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    font-size: 2.2em;
+}
+
+#extractFiles:hover {
+    background-color: #ccc;
+}
+
+#mods {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.modsButtons {
+    /* width: 100%;
+    border: 1px #fff solid;
+    padding: 10px;
+    font-size: 1.9em;
+    display: none; */
+    position: absolute;
+    opacity: 0;
+}
+
+.labelButtons {
+    justify-content: center;
+    width: 100%;
+    padding: 20px 30px;
+    background: #e5e5e5;
+    font-size: 2em;
+    color: #7f7f7f;
+    transition: background 0.1s, color 0.1s;
+}
+
+.labelButtons:active {
+    background: #aaa;
+  }
+
+.modsButtons:checked + .labelButtons {
+    background: #333;
+    color: #000;
+  }
+.modsButtons:checked {
+    background: #ccc;
+}
+
+.modsButtons:hover {
+    background-color: #ccc;
+}

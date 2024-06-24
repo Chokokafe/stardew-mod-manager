@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Stardew Valley Mod Helper</title>
+  </head>
+  <body>
+    <h1 id="pagetitle">Stardew valley mod helper</h1>
+    <button id="extractFiles">Extract Files !</button>
+    <div id="mods">
+      <input id="installed" class="modsButtons" type="radio" name="tabs"></button>
+      <label for="installed" class="labelButtons">Mods installed</label>
+      <input id="toInstall" class="modsButtons" type="radio" name="tabs"></button>
+      <label for="toInstall" class="labelButtons">Mods to install</label>
+      <input id="toUpdate" class="modsButtons" type="radio" name="tabs"></button>
+      <label for="toUpdate" class="labelButtons">Mods to update</label>
+    </div>
+    <div id="content"></div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
